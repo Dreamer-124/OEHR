@@ -1,2 +1,2 @@
-# OCR_Enhance
+# OEHR
 A OCR enhanced tool for Table recongnization
