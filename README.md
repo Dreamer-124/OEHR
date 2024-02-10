@@ -17,7 +17,7 @@ You can download the sample of OEHR in the folder, named sample. The folder's pa
 
 #### 1.3 Structure
 
-<img src="E:\model\ER.png" alt="ER" style="zoom: 25%;" />
+<img src="image_readme/ER.png" alt="ER" style="zoom: 25%;" />
 
 
 
