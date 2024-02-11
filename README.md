@@ -4,7 +4,7 @@
 
 #### 1.1 Description
 
-An Orthopedic Electronic Health Record Dataset., sourced from the EHR of real hospitals. Information available includes patient measurements, diagnoses, treatments, clinical notes, and medical images.  OEHR is a multilingual dataset, including English and
+An Orthopedic Electronic Health Record Dataset., sourced from the EHR of real hospitals. Information available includes patient measurements, diagnoses, treatments, clinical notes, and medical images.  Besides, OEHR is a multilingual dataset, including English and
 Chinese. 
 
 
