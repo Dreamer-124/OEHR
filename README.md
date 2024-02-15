@@ -113,7 +113,7 @@ if __name__ == '__main__':
 
 ​                                                                                                          Fig.1 Unenhanced Effect 
 
-<img src="image_readme\Enhanced_Example_page-0001.jpg" alt="Enhanced_Example_page-0001" style="zoom:50%;" />
+<img src="image_readme\Enhanced_Example.jpg" alt="Enhanced_Example_page-0001" style="zoom:50%;" />
 
 ​                                                                                                             Fig.2 Enhanced Effect 
 
