@@ -110,12 +110,10 @@ if __name__ == '__main__':
 
 
 <img src="image_readme\Unenhanced_Example.jpg" alt="Unenhanced_Example" style="zoom:50%;" />
-
-<div align = "center">Fig.1 Unenhanced Effect</div> 
+<div align = "center">*Fig.1 Unenhanced Effect*</div> 
 
 <img src="image_readme\Enhanced_Example.jpg" alt="Enhanced_Example_page-0001" style="zoom:50%;" />
-
-<div align = "center">Fig.2 Enhanced Effect</div> 
+<div align = "center">*Fig.2 Enhanced Effect*</div> 
 
 
 
