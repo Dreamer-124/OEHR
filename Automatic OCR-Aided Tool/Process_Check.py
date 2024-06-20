@@ -25,7 +25,6 @@ def detect_lines_enhance(img0):
     return:
     None
     '''
-
     # -------------------------------------------------1、使用LSD算法检测直线------------------------------------------------- #
     # # 读取输入图片
     # img0 = cv2.imread(image_path)
@@ -93,20 +92,9 @@ def extract_check_topic(img1):
 if __name__ == '__main__':
     # -----------------1.测试检测直线----------------- #
     image_path = 'Input/Check_Error/check_error_0.png'
-    # save_dir = 'Ouput/Check_Out'
-    # image_path_1 = 'Check_9_Enhance'
 
     # 读取输入图片
     img0 = cv2.imread(image_path)
-    # topic = extract_check_topic(img0)
-    # extracted_info = {'检查主题': topic}
-    # print(extracted_info)
-
-    # cropped_image = detect_lines_enhance(img0)
-    #
-    # table_engine = PPStructure(layout = False, show_log = True)
-    # result = table_engine(cropped_image)
-    # print('result: ', result)
 
     # save_structure_res(result, save_dir, image_path_1)
     save_dir = 'Save/All_Table/'
@@ -122,9 +110,9 @@ if __name__ == '__main__':
 
     # print('result:', result)
     Assistive_Tools.change_result_index(result, 16)
-    save_structure_res(result, save_dir, "2008-付士友00174102")
+    save_structure_res(result, save_dir, "sample")
 
-    file_path = 'Save/All_Table/' + "2008-付士友00174102" + '/[' + str(16) + "]_0.xlsx"
+    file_path = 'Save/All_Table/' + "sample" + '/[' + str(16) + "]_0.xlsx"
 
     # 读取原有的 Excel 文件
     df = pd.read_excel(file_path)
