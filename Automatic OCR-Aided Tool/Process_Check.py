@@ -26,9 +26,6 @@ def detect_lines_enhance(img0):
     None
     '''
     # -------------------------------------------------1、使用LSD算法检测直线------------------------------------------------- #
-    # # 读取输入图片
-    # img0 = cv2.imread(image_path)
-
     # 截取图片中的固定区域
     img0 = img0[268:915, 257:1260]
 
@@ -51,10 +48,7 @@ def detect_lines_enhance(img0):
         # cv2.line(img0, (x0, y0), (x1, y1), (0, 255, 0), 1, cv2.LINE_AA)
 
     # 显示并保存结果
-    # cv2.imwrite('Unenhanced_And_Enhanced_Image/Check/check_enhance_9.jpg', img0)
-    # cv2.imshow("LSD", img0)
-    # cv2.waitKey(0)
-    # cv2.destroyAllWindows()
+    cv2.imwrite('Unenhanced_And_Enhanced_Image/Check/check_enhance_9.jpg', img0)
 
     return img0
     # -------------------------------------------------------------------------------------------------------------------------- #
@@ -96,7 +90,6 @@ if __name__ == '__main__':
     # 读取输入图片
     img0 = cv2.imread(image_path)
 
-    # save_structure_res(result, save_dir, image_path_1)
     save_dir = 'Save/All_Table/'
 
     topic = extract_check_topic(img0)
@@ -108,7 +101,6 @@ if __name__ == '__main__':
     table_engine = PPStructure(layout=False, show_log=True)
     result = table_engine(img0)
 
-    # print('result:', result)
     Assistive_Tools.change_result_index(result, 16)
     save_structure_res(result, save_dir, "sample")
 
