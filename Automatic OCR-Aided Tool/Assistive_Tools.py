@@ -117,8 +117,8 @@ def change_result_index(result, counter):
 def format_date_time(date_time):
     # 使用正则表达式提取和整合日期和时间
     pattern = r"(\d{4}-\d{1,2}-\d{1,2})(\d{1,2}:\d{1,2}:\d{1,2})"
-    # formatted_string = re.sub(pattern, r"\1 \2", date_time)
     formatted_string = re.search(pattern, date_time)
+    
     # 提取到的日期和时间
     date = formatted_string.group(1)
     time = formatted_string.group(2)
@@ -136,5 +136,5 @@ def cv_imread(file_path):
     return cv_img
 
 if __name__ == '__main__':
-    string = "出院方式2008-1-30:00:00出院方式：正常"
+    string = "出院方式2080-5-2:00:00出院方式：正常"
     format_date_time(string)
