@@ -25,7 +25,6 @@ import numpy as np
 
 from paddleocr import PPStructure, save_structure_res
 
-
 # 把住院情况分成两个表进行处理，第一个表手动绘制，第二个表自动增强
 
 # 对下方表格做直线检测增强
@@ -40,11 +39,7 @@ def detect_lines_enhance(img0):
     return:
     None
     '''
-
     # -------------------------------------------------1、使用LSD算法检测直线------------------------------------------------- #
-    # # 读取输入图片
-    # img0 = cv2.imread(image_path)
-
     # 截取图片中的固定区域
     img0 = img0[527:725, 263:1005]
 
@@ -68,12 +63,9 @@ def detect_lines_enhance(img0):
 
     # 显示并保存结果
     cv2.imwrite('Unenhanced_And_Enhanced_Image/Admissions/admissions_enhance_1.jpg', img0)
-    # cv2.imshow("LSD", img0)
-    # cv2.waitKey(0)
-    # cv2.destroyAllWindows()
+    
     return img0
     # -------------------------------------------------------------------------------------------------------------------------- #
-
 
 # 第一个表paddleocr识别
 def extract_admissions(img):
@@ -145,7 +137,6 @@ def extract_admissions(img):
                 extracted_info["诊断日期"] = Assistive_Tools.format_date_time(string_replaced)
 
     return extracted_info
-
 
 # 分别对两个表进行PPStruructure处理
 # 示例用法
