@@ -19,8 +19,8 @@ from paddleocr import PPStructure, save_structure_res
 from bs4 import BeautifulSoup
 
 if __name__ == "__main__":
-    dir_path = "D:\Desktop\研究生第一学期\SIGIR骨科数据集处理\骨科病历数据\原始病历\有入院记录划分\文件夹_3"  # 指定文件输入目录
-    save_floder = "./Ouput/table"  # 保存结果的文件夹
+    dir_path = "your_input_dir"  # 指定文件输入目录
+    save_floder = "your_output_dir"  # 保存结果的文件夹
 
     nature_info = 0
     admmision_info = 0
