@@ -27,10 +27,6 @@ sha256_hash = hashlib.sha256(row_string.encode()).hexdigest()
 print("SHA256 Hash:", sha256_hash)
 
 # 随机采样
-# sample_3 = random.sample(sha256_hash, 3)
-# sample_2 = random.sample(sha256_hash, 2)
-# sample_1 = random.sample(sha256_hash, 1)
-
 sample_3 = sha256_hash[0:3]  # 采集字符串中索引为0到2的字符（共3个字符）
 sample_2 = sha256_hash[32:34]  # 采集字符串中索引为0到1的字符（共2个字符）
 sample_1 = sha256_hash[63]  # 采集字符串中索引为0的字符（共1个字符）
